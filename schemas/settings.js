@@ -20,25 +20,25 @@ export default {
             fields: [
                 {
                     name: 'facebook',
-                    type: 'string',
+                    type: 'url',
                     title: 'Facebook',
                     description: 'Add facebook link',
                 },
                 {
                     name: 'instagram',
-                    type: 'string',
+                    type: 'url',
                     title: 'Instagram',
                     description: 'Add Instagram link',
                 },
                 {
                     name: 'whatsapp',
-                    type: 'string',
+                    type: 'url',
                     title: 'Whatsapp',
                     description: 'Add whatsapp link',
                 },
                 {
                     name: 'tiktok',
-                    type: 'string',
+                    type: 'url',
                     title: 'Tiktok',
                     description: 'Add tiktok link',
                 },
