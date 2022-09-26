@@ -4,9 +4,9 @@ export default {
     title: 'Settings',
     fields: [
         {
-            name: 'title',
-            type: 'string',
-            title: 'Title',
+            name: 'seo',
+            type: 'seo',
+            title: 'Default seo',
         },
     ],
 }
