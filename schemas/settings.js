@@ -8,5 +8,10 @@ export default {
             type: 'seo',
             title: 'Default seo',
         },
+        {
+            name: 'logo',
+            type: 'Image',
+            title: 'Website Logo',
+        },
     ],
 }

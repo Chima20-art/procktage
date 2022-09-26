@@ -2,6 +2,7 @@
 import createSchema from 'part:@sanity/base/schema-creator'
 import settings from './settings'
 import seo from './seo'
+import Image from './Image'
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
@@ -16,5 +17,6 @@ export default createSchema({
         /* Your types here! */
         settings,
         seo,
+        Image,
     ]),
 })
