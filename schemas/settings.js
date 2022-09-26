@@ -14,6 +14,37 @@ export default {
             title: 'Website Logo',
         },
         {
+            name: 'media',
+            type: 'object',
+            title: 'Social media',
+            fields: [
+                {
+                    name: 'facebook',
+                    type: 'string',
+                    title: 'Facebook',
+                    description: 'Add facebook link',
+                },
+                {
+                    name: 'instagram',
+                    type: 'string',
+                    title: 'Instagram',
+                    description: 'Add Instagram link',
+                },
+                {
+                    name: 'whatsapp',
+                    type: 'string',
+                    title: 'Whatsapp',
+                    description: 'Add whatsapp link',
+                },
+                {
+                    name: 'tiktok',
+                    type: 'string',
+                    title: 'Tiktok',
+                    description: 'Add tiktok link',
+                },
+            ],
+        },
+        {
             name: 'contact',
             type: 'object',
             title: 'Contact',
@@ -42,37 +73,6 @@ export default {
                     name: 'email',
                     type: 'string',
                     title: 'Email',
-                },
-            ],
-        },
-        {
-            name: 'media',
-            type: 'object',
-            title: 'Social media',
-            fields: [
-                {
-                    name: 'facebook',
-                    type: 'string',
-                    title: 'Facebook',
-                    description: 'Add facebook link',
-                },
-                {
-                    name: 'instagram',
-                    type: 'string',
-                    title: 'Instagram',
-                    description: 'Add Instagram link',
-                },
-                {
-                    name: 'whatsapp',
-                    type: 'string',
-                    title: 'Whatsapp',
-                    description: 'Add whatsapp link',
-                },
-                {
-                    name: 'tiktok',
-                    type: 'string',
-                    title: 'Tiktok',
-                    description: 'Add tiktok link',
                 },
             ],
         },
