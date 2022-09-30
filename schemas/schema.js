@@ -9,6 +9,7 @@ import product from './product'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import subCategory from './subCategory'
+import blockContent from './blockContent'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,7 +23,8 @@ export default createSchema({
         seo,
         Image,
         category,
-        product,
         subCategory,
+        product,
+        blockContent,
     ]),
 })
