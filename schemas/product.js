@@ -7,26 +7,29 @@ export default {
             name: 'title',
             type: 'string',
             title: 'Title',
+            validation: (Rule) => Rule.required(),
         },
         {
             name: 'reference',
             type: 'string',
             title: 'Numero de reference',
+            validation: (Rule) => Rule.required(),
         },
         {
             name: 'image',
             type: 'image',
             title: 'image',
+            validation: (Rule) => Rule.required(),
         },
+
         {
-            name: 'subCategory',
-            type: 'object',
-            fields: [
+            title: 'Subcategory',
+            name: 'Subcategory',
+            type: 'reference',
+            validation: (Rule) => Rule.required(),
+            to: [
                 {
-                    title: 'Subcategory',
-                    name: 'Subcategory',
-                    type: 'reference',
-                    to: [{ type: 'subCategory' }],
+                    type: 'subCategory',
                 },
             ],
         },
