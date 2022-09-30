@@ -14,21 +14,10 @@ export default {
             type: 'array',
             of: [
                 {
-                    name: 'subCategory',
-                    title: 'Sub category',
-                    type: 'object',
-                    fields: [
-                        {
-                            name: 'title',
-                            type: 'string',
-                            title: 'Titre',
-                        },
-                        {
-                            name: 'image',
-                            type: 'Image',
-                            title: 'Image',
-                        },
-                    ],
+                    name: 'subCategorie',
+                    title: 'subCategories',
+                    type: 'reference',
+                    to: [{ type: 'subCategory' }],
                 },
             ],
         },
