@@ -13,9 +13,9 @@ export default {
             },
         },
         {
-            name: 'logo',
+            name: 'image',
             type: 'image',
-            title: 'Logo',
+            title: 'image',
             options: {
                 isHighlighted: true,
                 hotspot: true,
