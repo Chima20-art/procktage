@@ -19,14 +19,48 @@ export default {
             title: 'image',
         },
         {
-            name: 'category',
+            name: 'subCategory',
             type: 'object',
             fields: [
                 {
-                    title: 'Category',
-                    name: 'category',
+                    title: 'Subcategory',
+                    name: 'Subcategory',
                     type: 'reference',
                     to: [{ type: 'subCategory' }],
+                },
+            ],
+        },
+        {
+            name: 'content',
+            type: 'blockContent',
+            title: 'Content',
+        },
+        {
+            name: 'description',
+            type: 'array',
+            title: 'Variants',
+            of: [
+                {
+                    name: 'description',
+                    type: 'object',
+                    title: 'Variants',
+                    fields: [
+                        {
+                            name: 'reference',
+                            type: 'string',
+                            title: 'Reference',
+                        },
+                        {
+                            name: 'volume',
+                            type: 'string',
+                            title: 'Volume',
+                        },
+                        {
+                            name: 'quantite',
+                            type: 'string',
+                            title: 'Quantite',
+                        },
+                    ],
                 },
             ],
         },
