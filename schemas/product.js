@@ -49,18 +49,36 @@ export default {
                             name: 'reference',
                             type: 'string',
                             title: 'Reference',
+                            validation: (Rule) => Rule.required(),
                         },
                         {
-                            name: 'volume',
+                            name: 'sizing',
                             type: 'string',
-                            title: 'Volume',
+                            title: 'Dimensionnement',
+                            validation: (Rule) => Rule.required(),
                         },
                         {
                             name: 'quantite',
                             type: 'string',
                             title: 'Quantite',
+                            validation: (Rule) => Rule.required(),
                         },
                     ],
+                    preview: {
+                        select: {
+                            title: 'reference',
+                            sizing: 'sizing',
+                            quantite: 'quantite',
+                        },
+                        prepare(selection) {
+                            const { title, sizing, quantite } = selection
+                            return {
+                                title: `${title}${
+                                    sizing ? ' / ' + sizing : ''
+                                }${quantite ? ' / ' + quantite : ''}`,
+                            }
+                        },
+                    },
                 },
             ],
         },
