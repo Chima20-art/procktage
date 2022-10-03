@@ -1,4 +1,7 @@
+import { FcIcons8Cup } from 'react-icons/fc'
+
 export default {
+    icon: FcIcons8Cup,
     name: 'product',
     type: 'document',
     title: 'product',
