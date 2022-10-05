@@ -11,7 +11,8 @@
         "@sanity/base",
         "@sanity/default-layout",
         "@sanity/default-login",
-        "@sanity/desk-tool"
+        "@sanity/desk-tool",
+        "@indent-oss/sanityio-referenced-by"
     ],
     "env": {
         "development": {
