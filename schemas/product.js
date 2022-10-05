@@ -13,6 +13,23 @@ export default {
             validation: (Rule) => Rule.required(),
         },
         {
+            title: 'Slug',
+            name: 'slug',
+            type: 'slug',
+            validation: (Rule) => Rule.required(),
+            options: {
+                source: 'title',
+                maxLength: 200, // will be ignored if slugify is set
+                slugify: (input) =>
+                    input
+                        .toLowerCase()
+                        .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '')
+                        .trim()
+                        .replace(/\s+/g, '-')
+                        .slice(0, 200),
+            },
+        },
+        {
             name: 'reference',
             type: 'string',
             title: 'Numero de reference',
