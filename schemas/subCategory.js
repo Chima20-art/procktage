@@ -14,4 +14,10 @@ export default {
             title: 'Image',
         },
     ],
+    preview: {
+        select: {
+            title: 'title',
+            media: 'image.image',
+        },
+    },
 }
