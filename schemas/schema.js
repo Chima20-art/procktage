@@ -11,6 +11,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import subCategory from './subCategory'
 import blockContent from './blockContent'
 import home from './pages/home'
+import contact from './contact'
 import demandes from './demandes'
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -29,6 +30,7 @@ export default createSchema({
         product,
         blockContent,
         home,
+        contact,
         demandes,
     ]),
 })
