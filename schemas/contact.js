@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default {
     name: 'contact',
     type: 'document',
@@ -49,8 +51,12 @@ export default {
         },
         prepare({ traite, nomResponsable }) {
             return {
-                title: (traite ? '✅' : '🚫') + nomResponsable,
-                media: traite ? '✅' : '🚫',
+                title: nomResponsable,
+                media: (
+                    <span style={{ fontSize: '1.5rem' }}>
+                        {traite ? '✅' : '🚫'}
+                    </span>
+                ),
             }
         },
     },
