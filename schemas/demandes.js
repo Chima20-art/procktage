@@ -1,3 +1,6 @@
+import React from 'react'
+import { FcHome, FcSettings, FcFilingCabinet } from 'react-icons/fc'
+
 export default {
     name: 'demandes',
     type: 'document',
@@ -58,7 +61,6 @@ export default {
                     type: 'object',
                     fields: [
                         {
-                            _key: 'product._id}',
                             name: 'product',
                             type: 'reference',
                             title: 'produit',
@@ -73,7 +75,7 @@ export default {
                             title: 'Variant Refrence',
                             type: 'string',
                         },
-                        { name: 'quantite', type: 'string', title: 'Quantite' },
+                        { name: 'quantite', type: 'number', title: 'Quantite' },
                     ],
                     preview: {
                         select: {
@@ -103,4 +105,26 @@ export default {
             ],
         },
     ],
+    preview: {
+        select: {
+            status: 'status',
+            email: 'email',
+            date: '_createdAt',
+        },
+        prepare({ status, email, date }) {
+            return {
+                title: email,
+                subtitle: new Date(date).toLocaleDateString(),
+                media: (
+                    <span style={{ fontSize: '1.5rem' }}>
+                        {status == 'New' && '🆕'}
+                        {status == 'Confirmed' && '🤝'}
+                        {status == 'Shiped' && '📦'}
+                        {status == 'Delivered' && '✅'}
+                        {status == 'Canceled' && '🚫'}
+                    </span>
+                ),
+            }
+        },
+    },
 }
