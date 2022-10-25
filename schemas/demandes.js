@@ -58,6 +58,7 @@ export default {
                     type: 'object',
                     fields: [
                         {
+                            _key: 'product._id}',
                             name: 'product',
                             type: 'reference',
                             title: 'produit',
