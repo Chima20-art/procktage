@@ -1,10 +1,13 @@
 import React from 'react'
 import { FcHome, FcSettings, FcFilingCabinet } from 'react-icons/fc'
 
+import { FcShop } from 'react-icons/fc'
+
 export default {
     name: 'demandes',
     type: 'document',
     title: 'Demandes',
+    icon: FcShop,
     fields: [
         {
             name: 'status',

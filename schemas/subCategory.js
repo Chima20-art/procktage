@@ -1,7 +1,10 @@
+import { MdCategory } from 'react-icons/bs'
+
 export default {
     name: 'subCategory',
     title: 'Sub category',
     type: 'document',
+    icon: MdCategory,
     fields: [
         {
             name: 'title',

@@ -1,9 +1,11 @@
 import React from 'react'
+import { FcContacts } from 'react-icons/fc'
 
 export default {
     name: 'contact',
     type: 'document',
     title: 'Contact',
+    icon: FcContacts,
     initialValue: {
         traite: false,
     },
