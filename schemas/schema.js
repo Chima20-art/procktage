@@ -2,7 +2,7 @@
 import createSchema from 'part:@sanity/base/schema-creator'
 import settings from './settings'
 import seo from './seo'
-import Image from './Image'
+import Image from './image'
 import category from './category'
 import product from './product'
 
