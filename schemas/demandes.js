@@ -6,20 +6,25 @@ import { FcShop } from 'react-icons/fc'
 export default {
     name: 'demandes',
     type: 'document',
-    title: 'Demandes',
+    title: 'Demandes de devis',
     icon: FcShop,
+    initialValue: () => ({
+        status: 'New',
+    }),
     fields: [
         {
             name: 'status',
             title: 'Statut',
             type: 'string',
+
             options: {
                 list: [
-                    { title: 'New', value: 'New' },
-                    { title: 'Confirmed', value: 'Confirmed' },
-                    { title: 'Shiped', value: 'Shiped' },
-                    { title: 'Delivered', value: 'Delivered' },
-                    { title: 'Cancled', value: 'Canceled' },
+                    { title: 'Nouvelle demande', value: 'New' },
+                    { title: 'Demande envoyée', value: 'replied' },
+                    { title: 'Demande confirmée', value: 'Confirmed' },
+                    { title: 'Commande envoyée', value: 'Shiped' },
+                    { title: 'Commande delivrée', value: 'Delivered' },
+                    { title: 'Annulée', value: 'Canceled' },
                 ],
             },
         },
@@ -121,6 +126,7 @@ export default {
                 media: (
                     <span style={{ fontSize: '1.5rem' }}>
                         {status == 'New' && '🆕'}
+                        {status == 'replied' && '📩'}
                         {status == 'Confirmed' && '🤝'}
                         {status == 'Shiped' && '📦'}
                         {status == 'Delivered' && '✅'}
