@@ -1,10 +1,10 @@
-import { BiCategory } from 'react-icons/bs'
+import { FcMindMap } from 'react-icons/fc'
 
 export default {
     name: 'category',
     type: 'document',
     title: 'Categorie',
-    icon: BiCategory,
+    icon: FcMindMap,
     fields: [
         {
             name: 'title',

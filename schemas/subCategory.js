@@ -1,10 +1,10 @@
-import { MdCategory } from 'react-icons/bs'
+import { FcTimeline } from 'react-icons/fc'
 
 export default {
     name: 'subCategory',
     title: 'Sub category',
     type: 'document',
-    icon: MdCategory,
+    icon: FcTimeline,
     fields: [
         {
             name: 'title',

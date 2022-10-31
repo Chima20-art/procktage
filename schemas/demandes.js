@@ -14,16 +14,16 @@ export default {
     fields: [
         {
             name: 'status',
-            title: 'Statut',
+            title: 'Statut de la commande',
             type: 'string',
 
             options: {
                 list: [
-                    { title: 'Nouvelle demande', value: 'New' },
-                    { title: 'Demande envoyée', value: 'replied' },
-                    { title: 'Demande confirmée', value: 'Confirmed' },
-                    { title: 'Commande envoyée', value: 'Shiped' },
-                    { title: 'Commande delivrée', value: 'Delivered' },
+                    { title: ' Nouvelle demande de devis', value: 'New' },
+                    { title: 'Devis envoyée', value: 'replied' },
+                    { title: 'Confirmée', value: 'Confirmed' },
+                    { title: 'Envoyée', value: 'Shiped' },
+                    { title: 'Livrée', value: 'Delivered' },
                     { title: 'Annulée', value: 'Canceled' },
                 ],
             },
