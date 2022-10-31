@@ -15,7 +15,7 @@ export default () =>
         .items([
             S.listItem()
                 .icon(FcSettings)
-                .title('Site settings')
+                .title('Paramètres du site')
                 .child(
                     S.editor()
                         .schemaType('settings')

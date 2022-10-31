@@ -6,7 +6,7 @@ export default {
         {
             name: 'seo',
             type: 'seo',
-            title: 'Default seo',
+            title: 'Seo',
         },
         {
             name: 'logo',
@@ -22,25 +22,25 @@ export default {
                     name: 'facebook',
                     type: 'url',
                     title: 'Facebook',
-                    description: 'Add facebook link',
+                    description: 'Ajouter un link facebook ',
                 },
                 {
                     name: 'instagram',
                     type: 'url',
                     title: 'Instagram',
-                    description: 'Add Instagram link',
+                    description: 'Ajouter un link Instagram ',
                 },
                 {
                     name: 'whatsapp',
                     type: 'url',
                     title: 'Whatsapp',
-                    description: 'Add whatsapp link',
+                    description: 'Ajouter un link whatsapp ',
                 },
                 {
                     name: 'tiktok',
                     type: 'url',
                     title: 'Tiktok',
-                    description: 'Add tiktok link',
+                    description: 'Ajouter un link tiktok ',
                 },
             ],
         },
@@ -48,16 +48,18 @@ export default {
             name: 'contact',
             type: 'object',
             title: 'Contact',
+            description:
+                ' ces informations apparaissent sur le pied de page du siteweb',
             fields: [
                 {
                     name: 'adress',
                     type: 'string',
-                    title: 'Adress',
+                    title: 'Adresse',
                 },
                 {
                     name: 'phone',
                     type: 'string',
-                    title: 'Phone',
+                    title: 'Telephone',
                 },
                 {
                     name: 'mobile',

@@ -49,7 +49,7 @@ export default {
         {
             name: 'telephone',
             type: 'string',
-            title: 'telephone',
+            title: 'Telephone',
             readOnly: true,
         },
         {
@@ -61,7 +61,7 @@ export default {
         {
             name: 'products',
             type: 'array',
-            title: 'produits',
+            title: 'Commandes',
             of: [
                 {
                     name: 'order',

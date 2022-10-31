@@ -4,18 +4,21 @@ export default {
     icon: FcIcons8Cup,
     name: 'product',
     type: 'document',
-    title: 'product',
+    title: 'Produit',
     fields: [
         {
             name: 'title',
             type: 'string',
-            title: 'Title',
+            title: 'Titre',
+            description: 'Nom du produit',
             validation: (Rule) => Rule.required(),
         },
         {
             title: 'Slug',
             name: 'slug',
             type: 'slug',
+            description:
+                "Veuillez générer un slug, il peut être integré à la fin de l'URL",
             validation: (Rule) => Rule.required(),
             options: {
                 source: 'title',
@@ -32,20 +35,24 @@ export default {
         {
             name: 'reference',
             type: 'string',
-            title: 'Numero de reference',
+            title: 'Reference',
+            description: 'Reference du produit',
             validation: (Rule) => Rule.required(),
         },
         {
             name: 'image',
             type: 'image',
-            title: 'image',
+            title: 'Image',
+            description: 'Image du produit',
             validation: (Rule) => Rule.required(),
         },
 
         {
-            title: 'Subcategory',
+            title: 'Sous-categorie',
             name: 'Subcategory',
             type: 'reference',
+            description:
+                'Choisissez la sous-categorie de laquelle le produit dépendra',
             validation: (Rule) => Rule.required(),
             to: [
                 {
@@ -56,12 +63,14 @@ export default {
         {
             name: 'content',
             type: 'blockContent',
-            title: 'Content',
+            title: 'Contenu',
+            description: 'Text description produit',
         },
         {
             name: 'description',
             type: 'array',
-            title: 'Variants',
+            title: 'Tableau ',
+            description: 'Tableau descriptif du produit',
             of: [
                 {
                     name: 'description',
@@ -97,8 +106,8 @@ export default {
                             const { title, sizing, quantite } = selection
                             return {
                                 title: `${title}${
-                                    sizing ? ' / ' + sizing : ''
-                                }${quantite ? ' / ' + quantite : ''}`,
+                                    sizing ? ' - ' + sizing : ''
+                                }${quantite ? ' - ' + quantite : ''}`,
                             }
                         },
                     },

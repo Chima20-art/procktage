@@ -2,7 +2,7 @@ import { FcTimeline } from 'react-icons/fc'
 
 export default {
     name: 'subCategory',
-    title: 'Sub category',
+    title: 'Sous categorie',
     type: 'document',
     icon: FcTimeline,
     fields: [
@@ -10,11 +10,14 @@ export default {
             name: 'title',
             type: 'string',
             title: 'Titre',
+            description: 'Saisissez un nom pour la sous-categorie',
         },
         {
             title: 'Slug',
             name: 'slug',
             type: 'slug',
+            description:
+                "Veuillez générer un slug, il peut être integré à la fin de l'URL",
             validation: (Rule) => Rule.required(),
             options: {
                 source: 'title',
@@ -32,6 +35,8 @@ export default {
             name: 'image',
             type: 'Image',
             title: 'Image',
+            description:
+                'image representative de la sous-categorie sur le site web.',
         },
     ],
     preview: {

@@ -3,18 +3,23 @@ import { FcMindMap } from 'react-icons/fc'
 export default {
     name: 'category',
     type: 'document',
-    title: 'Categorie',
+    title: 'Categories',
+
     icon: FcMindMap,
     fields: [
         {
             name: 'title',
             type: 'string',
-            title: 'title',
+            title: 'Titre',
+            description: 'Saisissez un nom pour la catégorie',
         },
         {
             title: 'Slug',
             name: 'slug',
             type: 'slug',
+            description:
+                "Veuillez générer un slug, il peut être integré à la fin de l'URL' ",
+
             validation: (Rule) => Rule.required(),
             options: {
                 source: 'title',
@@ -30,7 +35,8 @@ export default {
         },
         {
             name: 'subCategories',
-            title: 'Sub Categories',
+            title: 'Sous-categories',
+            description: 'créer ou sélectioner une sous-categorie',
             type: 'array',
             of: [
                 {
