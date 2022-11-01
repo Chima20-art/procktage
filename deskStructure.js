@@ -11,7 +11,7 @@ export const getDefaultDocumentNode = () => {
 
 export default () =>
     S.list()
-        .title('Content')
+        .title('Contenu')
         .items([
             S.listItem()
                 .icon(FcSettings)
