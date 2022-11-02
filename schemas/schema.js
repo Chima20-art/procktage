@@ -13,7 +13,7 @@ import blockContent from './blockContent'
 import home from './pages/home'
 import contact from './contact'
 import demandes from './demandes'
-
+import entreprise from './pages/entreprise'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
     // We name our schema
@@ -32,5 +32,6 @@ export default createSchema({
         home,
         contact,
         demandes,
+        entreprise,
     ]),
 })
