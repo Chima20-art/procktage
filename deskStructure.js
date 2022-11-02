@@ -20,7 +20,7 @@ export default () =>
                     S.editor()
                         .schemaType('settings')
                         .documentId('settings')
-                        .title('Site settings')
+                        .title('Paramètres du site')
                 ),
             // Add a visual divider (optional)
             S.listItem()
@@ -32,12 +32,21 @@ export default () =>
                         .items([
                             S.listItem()
                                 .icon(FcHome)
-                                .title('Home Page')
+                                .title("Page d'accueil ")
                                 .child(
                                     S.editor()
                                         .schemaType('homePage')
                                         .documentId('homePage')
-                                        .title('home Page')
+                                        .title("Page d'accueil")
+                                ),
+                            S.listItem()
+                                .icon(FcHome)
+                                .title('Page-Entreprise')
+                                .child(
+                                    S.editor()
+                                        .schemaType('entreprise')
+                                        .documentId('entreprise')
+                                        .title('Entreprise')
                                 ),
                         ])
                 ),
@@ -45,6 +54,8 @@ export default () =>
             // List out the rest of the document types, but filter out the config type
             ...S.documentTypeListItems().filter(
                 (listItem) =>
-                    !['settings', 'homePage'].includes(listItem.getId())
+                    !['settings', 'homePage', 'enreprise'].includes(
+                        listItem.getId()
+                    )
             ),
         ])
