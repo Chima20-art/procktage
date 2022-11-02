@@ -17,7 +17,7 @@ export default {
             name: 'image',
             type: 'image',
             title: 'image',
-            description: 'image logo du siteweb',
+            description: ' Glissez ou déposez une photo ',
             options: {
                 isHighlighted: true,
                 hotspot: true,

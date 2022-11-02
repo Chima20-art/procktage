@@ -2,7 +2,7 @@ import { FcTimeline } from 'react-icons/fc'
 
 export default {
     name: 'subCategory',
-    title: 'Sous categorie',
+    title: 'Sous categories',
     type: 'document',
     icon: FcTimeline,
     fields: [

@@ -4,7 +4,7 @@ import { FcContacts } from 'react-icons/fc'
 export default {
     name: 'contact',
     type: 'document',
-    title: 'Contact',
+    title: 'Contacts-Messages',
     icon: FcContacts,
     initialValue: {
         traite: false,

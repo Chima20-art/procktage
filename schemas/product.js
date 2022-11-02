@@ -4,7 +4,8 @@ export default {
     icon: FcIcons8Cup,
     name: 'product',
     type: 'document',
-    title: 'Produit',
+    title: 'Produits',
+
     fields: [
         {
             name: 'title',
