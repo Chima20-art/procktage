@@ -4,15 +4,15 @@ export default {
     title: 'Entreprise',
     fields: [
         {
-            name: 'content',
-            type: 'blockContent',
-            title: 'Text',
-            description: "Description de l'entreprise",
-        },
-        {
             name: 'image',
             type: 'Image',
             title: 'Image',
+        },
+        {
+            name: 'content',
+            type: 'array',
+            title: 'Paragraphes',
+            of: [{ name: 'title', type: 'paragraph', title: 'Paragraphe' }],
         },
     ],
 }
