@@ -78,5 +78,32 @@ export default {
                 },
             ],
         },
+        {
+            name: 'categories',
+            type: 'object',
+            title: 'Categories',
+            description:
+                ' Ces categories apparaissent sur le pied de page du siteweb : "Nos Produits"',
+            fields: [
+                {
+                    name: 'categorie1',
+                    title: 'Categorie-1',
+                    type: 'reference',
+                    to: [{ type: 'category' }],
+                },
+                {
+                    name: 'categorie2',
+                    title: 'Categorie-2',
+                    type: 'reference',
+                    to: [{ type: 'category' }],
+                },
+                {
+                    name: 'categorie3',
+                    title: 'Categorie-3',
+                    type: 'reference',
+                    to: [{ type: 'category' }],
+                },
+            ],
+        },
     ],
 }
