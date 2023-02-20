@@ -71,7 +71,8 @@ export default {
             name: 'description',
             type: 'array',
             title: 'Tableau ',
-            description: 'Tableau descriptif du produit',
+            description:
+                'ce tableau contient : la reference, la taille/dimensionement du produit, la quantité par paquet.',
             of: [
                 {
                     name: 'description',
