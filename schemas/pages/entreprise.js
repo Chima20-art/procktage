@@ -14,5 +14,10 @@ export default {
             title: 'Paragraphes',
             of: [{ name: 'title', type: 'paragraph', title: 'Paragraphe' }],
         },
+        {
+            name: 'youtubeUrl',
+            type: 'url',
+            title: 'YouTube video URL',
+        },
     ],
 }
