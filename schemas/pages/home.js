@@ -21,12 +21,12 @@ export default {
                         {
                             name: 'descriptionTitle',
                             title: 'Titre descriptif ',
-                            type: 'text',
+                            type: 'string',
                         },
                         {
                             name: 'description',
                             title: 'Description',
-                            type: 'string',
+                            type: 'text',
                         },
                         {
                             name: 'image',
