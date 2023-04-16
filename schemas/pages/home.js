@@ -20,8 +20,8 @@ export default {
                         },
                         {
                             name: 'descriptionTitle',
-                            title: 'Titre description ',
-                            type: 'string',
+                            title: 'Titre descriptif ',
+                            type: 'text',
                         },
                         {
                             name: 'description',
