@@ -47,6 +47,19 @@ export default {
             description: 'Image du produit',
             validation: (Rule) => Rule.required(),
         },
+        {
+            name: 'Images',
+            title: 'Liste des images',
+            description: 'ajouter plusieurs images',
+            type: 'array',
+            of: [
+                {
+                    name: 'image',
+                    title: 'image',
+                    type: 'image',
+                },
+            ],
+        },
 
         {
             title: 'Sous-categorie',
