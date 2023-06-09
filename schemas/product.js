@@ -55,8 +55,8 @@ export default {
             of: [
                 {
                     name: 'image',
-                    title: 'image',
                     type: 'image',
+                    title: 'Image',
                 },
             ],
         },
@@ -85,13 +85,18 @@ export default {
             type: 'array',
             title: 'Tableau ',
             description:
-                'ce tableau contient : la reference, la taille/dimensionement du produit, la quantité par paquet.',
+                'Ce tableau contient : la reference, la taille/dimensionement du produit, la quantité par paquet.',
             of: [
                 {
                     name: 'description',
                     type: 'object',
                     title: 'Variants',
                     fields: [
+                        {
+                            name: 'image',
+                            type: 'image',
+                            title: 'Image',
+                        },
                         {
                             name: 'reference',
                             type: 'string',
@@ -116,13 +121,16 @@ export default {
                             title: 'reference',
                             sizing: 'sizing',
                             quantite: 'quantite',
+                            imageUrl: 'image.asset.url',
                         },
                         prepare(selection) {
-                            const { title, sizing, quantite } = selection
+                            const { title, sizing, quantite, imageUrl } =
+                                selection
                             return {
                                 title: `${title}${
                                     sizing ? ' - ' + sizing : ''
                                 }${quantite ? ' - ' + quantite : ''}`,
+                                imageUrl,
                             }
                         },
                     },
