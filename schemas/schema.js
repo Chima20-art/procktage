@@ -15,6 +15,7 @@ import contact from './contact'
 import demandes from './demandes'
 import entreprise from './pages/entreprise'
 import paragraph from './paragraph'
+import instaCatalogue from './instaCatalogue'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
     // We name our schema
@@ -35,5 +36,6 @@ export default createSchema({
         demandes,
         entreprise,
         paragraph,
+        instaCatalogue,
     ]),
 })
